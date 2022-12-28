@@ -50,7 +50,8 @@ body {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
     text-align: center;
     font-size: 1em;
     color: #fde9ff;
@@ -110,6 +111,30 @@ h2 {
     color: #fff;
     text-shadow: 3px 1px 1px #e62822;
     border: none;
+
+  }
+
+  label {
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    text-shadow: 3px 1px 1px #e62822;
+  }
+
+  .input-div {
+    text-align: center;
+  }
+
+  .interval-quality-div {
+    text-align: center;
+  }
+
+  #interval-quality {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  #interval-number {
+    
   }
 
 

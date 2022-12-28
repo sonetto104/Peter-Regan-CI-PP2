@@ -32,11 +32,36 @@
             <div id="interval-button-div">
                 <button class="interval-button"><i class="fa-solid fa-music"></i></button>
             </div>
+
             <div class="input-div">
-                <label for="interval-quality">Interval Quality</label>
-                <select name="interval-quality" class="button"></select>
-                <label for="interval-number"></label>
-                <select name="interval-number" class="button"></select>
+                <div class="interval-quality-div">
+                    <label for="interval-quality">Interval Quality</label>
+                </div>
+                <div class="interval-quality-div">
+                    <select name="interval-quality" class="button" id="interval-quality">
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="augmented">Augmented</option>
+                        <option value="diminished">Diminished</option>
+                    </select>
+                </div>
+              
+                <div class="interval-quality-div">
+                    <label for="interval-number">Interval Number</label>
+                </div>
+                <div class="interval-quality-div">
+                    <select name="interval-number" class="button" id="interval-number">
+                        <option value="unison">Unison</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                        <option value="7th">7th</option>
+                        <option value="octave">Octave</option>
+                    </select>
+                </div>
+            </div>
                 <button class="button"></button>
                 <button class="button"></button>
             </div>
