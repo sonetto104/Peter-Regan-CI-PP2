@@ -19,16 +19,12 @@ body {
     #header-div {
         height: 20vh;
         background: rgb(63, 161, 251);
-        background: linear-gradient(
-          142deg,
+        background: linear-gradient(142deg,
          rgba(63, 161, 251, 1) 0%,
-         rgba(252, 70, 168, 1) 100%
-        );
+         rgba(252, 70, 168, 1) 100%);
         display: grid;
         align-items: center;
         justify-content: center;
-        
-
     }
 
     h1 {
@@ -38,14 +34,10 @@ body {
         margin: auto;
         padding: 20px;
         transform: skew(0, -10deg);
-
         order: 2;
         color: #fde9ff;
-        
-        
-        
         text-shadow: 3px 1px 1px #e62822, 2px 2px 1px #e903af, 4px 2px 1px #f58608,
-            3px 3px 1px #e62822, 5px 3px 1px #e903af, 4px 4px 1px #f58608;
+        3px 3px 1px #e62822, 5px 3px 1px #e903af, 4px 4px 1px #f58608;
 }
 
 
