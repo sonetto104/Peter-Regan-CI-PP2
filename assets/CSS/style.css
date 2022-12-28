@@ -72,6 +72,7 @@ h2 {
     border: none;
     border-radius: 15px;
     box-shadow: 0 5px #fff;
+    font-weight: lighter;
   }
   
   .button:hover {background-color: #3e8e41}
@@ -111,7 +112,14 @@ h2 {
     color: #fff;
     text-shadow: 3px 1px 1px #e62822;
     border: none;
+    cursor: pointer;
+  }
 
+  .interval-button:hover {transform: translateY(4px);
+  }
+  
+  .interval-button:active {
+    transform: translateY(4px);
   }
 
   label {
@@ -140,10 +148,16 @@ h2 {
 
   .notes-button1 {
     text-align: center;
+    font-weight: lighter;
   }
 
   .notes-button2 {
     text-align: center;
+    margin-top: 20px;
+    font-weight: lighter;
+  }
+
+  .submit-div {
     margin-top: 20px;
   }
 
