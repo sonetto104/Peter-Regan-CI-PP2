@@ -8,9 +8,16 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
+    background: rgb(63, 161, 251);
+    background: linear-gradient(142deg,
+     rgba(63, 161, 251, 1) 0%,
+     rgba(252, 70, 168, 1) 100%);
+     height: 100vh;
 }
 
 @media only screen and (max-width: 200px) {
+
+    /* Styling for Header Section */
 
     #header {
         height: 20vh;
@@ -18,10 +25,6 @@ body {
 
     #header-div {
         height: 20vh;
-        background: rgb(63, 161, 251);
-        background: linear-gradient(142deg,
-         rgba(63, 161, 251, 1) 0%,
-         rgba(252, 70, 168, 1) 100%);
         display: grid;
         align-items: center;
         justify-content: center;
@@ -38,6 +41,21 @@ body {
         color: #fde9ff;
         text-shadow: 3px 1px 1px #e62822, 2px 2px 1px #e903af, 4px 2px 1px #f58608,
         3px 3px 1px #e62822, 5px 3px 1px #e903af, 4px 4px 1px #f58608;
+}
+
+/* Styling for Game Area */
+
+.difficulty-div {
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1em;
+    color: #fde9ff;
+    text-shadow: 3px 1px 1px #e62822, 2px 2px 1px #e903af, 4px 2px 1px #f58608,
+    3px 3px 1px #e62822, 5px 3px 1px #e903af, 4px 4px 1px #f58608;
 }
 
 
