@@ -1,3 +1,17 @@
+/* Import Fonts From Google */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap');
+
+/* Eliminate  Margin,Border and Padding as Default */
+
 @media only screen and (max-width: 200px) {
-    
+
+    #header {
+        height: 20vh;
+    }
+
+    #header-div {
+        background-color: red;
+        height: 20vh;
+    }
 }
