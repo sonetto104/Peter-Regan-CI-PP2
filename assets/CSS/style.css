@@ -58,5 +58,33 @@ h2 {
     3px 3px 1px #e62822, 5px 3px 1px #e903af, 4px 4px 1px #f58608;
 }
 
+.button {
+    display: inline-flex;
+    font-size: 0.8em;
+    font-family: 'Righteous';
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e62822;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #fff;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .button-div {
+    display: inline-flex;
+    margin: auto;
+  }
+
 
 }
