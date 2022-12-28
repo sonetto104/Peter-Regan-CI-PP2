@@ -81,9 +81,20 @@ h2 {
     transform: translateY(4px);
   }
 
+  .button-container {
+    text-align: center;
+    justify-content: center;
+    padding: auto;
+    margin-top: 20px;
+  }
+  
+  
   .button-div {
     display: inline-flex;
-    margin: auto;
+    width: 40vw;
+    text-align: center;
+    justify-content: center;
+    
   }
 
 
