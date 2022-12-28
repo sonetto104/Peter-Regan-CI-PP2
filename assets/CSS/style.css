@@ -30,6 +30,9 @@ body {
         justify-content: center;
     }
 
+  /* Though not completely identical, the styling for this h1 element is heavily
+  dependent on code taken from this source: https://codepen.io/mireille1306/pen/BawdXzY */
+
     h1 {
         font-family: 'Righteous', cursive;
         text-align: center;
@@ -49,6 +52,8 @@ body {
     margin-top: 20px;
 }
 
+/* Styling for h1 that was taken from external source slightly adapted here */
+
 h2, .score-incrementor {
     font-family: 'Righteous', cursive;
     font-weight: lighter;
@@ -58,6 +63,9 @@ h2, .score-incrementor {
     text-shadow: 3px 1px 1px #e62822, 2px 2px 1px #e903af, 4px 2px 1px #f58608,
     3px 3px 1px #e62822, 5px 3px 1px #e903af, 4px 4px 1px #f58608;
 }
+
+/* Though not identical, hover, active, shadow and click effects for these buttons 
+heavily dependent on code taken from this source: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3 */
 
 .button {
     display: inline-flex;
@@ -160,7 +168,5 @@ h2, .score-incrementor {
   .submit-div {
     margin-top: 20px;
   }
-
-  
 
 }
