@@ -85,7 +85,7 @@ h2 {
     text-align: center;
     justify-content: center;
     padding: auto;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
   
@@ -95,6 +95,21 @@ h2 {
     text-align: center;
     justify-content: center;
     
+  }
+
+  #interval-button-div {
+    text-align: center;
+    
+  }
+
+  .interval-button {
+    height: 25vh;
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 3px 1px 1px #e62822;
+    border: none;
   }
 
 
