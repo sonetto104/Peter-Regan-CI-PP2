@@ -49,7 +49,7 @@ body {
     margin-top: 20px;
 }
 
-h2 {
+h2, .score-incrementor {
     font-family: 'Righteous', cursive;
     font-weight: lighter;
     text-align: center;
@@ -160,5 +160,7 @@ h2 {
   .submit-div {
     margin-top: 20px;
   }
+
+  
 
 }
