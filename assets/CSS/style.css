@@ -204,3 +204,62 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
     padding-top: 10px;
   }
 }
+
+/* 480px Breakpoint */
+
+@media only screen and (min-width: 480px) {
+  .difficulty-div {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+  }
+
+  .button-div {
+    display: inline-flex;
+    width: 40%;
+    text-align: left;
+    justify-content: left;
+    }
+
+  .button-container {
+    margin-top: 20px;
+    margin-right: 10px;
+    width: auto;
+  }
+
+  .interval-button {
+    font-size: 7em;
+    height: 40vh;
+  }
+
+  label {
+    font-size: 1.5em;
+  }
+
+  .notes-button-div {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+  }
+
+  .notes-button1, .notes-button2 {
+    display: inline-flex;
+    text-align: left;
+    width: auto;
+  }
+
+  .notes-button2 {
+    margin-top: 0;
+  }
+
+  .submit-div {
+    margin-top: 60px;
+  }
+
+  .score-div {
+    margin-top: 40px;
+  }
+
+
+}
