@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    
-})
+let notes = document.getElementsByTagName("audio");
+
+
+
 
