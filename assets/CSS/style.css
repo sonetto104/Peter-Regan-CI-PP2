@@ -260,6 +260,37 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
   .score-div {
     margin-top: 40px;
   }
+}
+
+/* 770px Breakpoint */
+
+@media only screen and (min-width: 770px) {
+  h1 {
+    font-size: 3.5em;
+    margin-top: 40px;
+  }
+
+  .difficulty-div {
+   width: 60vw;
+   margin-left: 20vw;
+   margin-right: 20vw;
+   margin-top: 80px;
+  }
+
+  .button-container {
+    margin-top: 30px;
+  }
+
+  .interval-button {
+    font-size: 12em;
+    height: 55vh;
+  }
+
+  h2, .score-incrementor {
+    font-size: 2em;
+  }
+
+  
 
 
 }
