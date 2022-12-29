@@ -305,3 +305,7 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
     margin-top: 40px;
   }
 }
+
+.notes {
+ display: none;
+}
