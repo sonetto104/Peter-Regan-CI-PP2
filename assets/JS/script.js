@@ -1,4 +1,4 @@
-let notes = document.getElementsByTagName("source");
+let notes = document.getElementsByTagName("audio");
 let notesArray = Array.from(notes);
 let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
 let intervalButton = document.getElementById("quaver-button");
@@ -9,6 +9,46 @@ function getRandomNotes(notesArray, num) {
 }
 
 
+var x = document.getElementById("C5");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+
+
+
+
+/** 
+function playNote () {
+    intervalButton.addEventListener("click", function () {
+        document.getElementById("C5").play();
+    })
+}
+
+
+
+
+
+/** 
+
+function playRandomNote () {
+    randomNote.play();
+}
+
+let  vid = document.getElementById("myVideo");
+
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+}
+/**
 function playNote() {
 
     document.getElementById('quaver-button').addEventListener('click', );
@@ -28,6 +68,7 @@ function playNote() {
 
 document.getElementById('quaver-button').addEventListener('click', playNote);
 
+*/
 
 
 
