@@ -1,26 +1,41 @@
-
-
-
-
-
-let intervalButton = document.getElementById("quaver-button");
-let notes = document.getElementsByTagName("audio");
-let notesArray = Array.from(notes);
+const intervalButton = document.getElementById("quaver-button");
+const notes = document.getElementsByTagName("audio");
+const notesArray = Array.from(notes);
+const randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
+const randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
+const firstSemitoneValue = parseInt(randomNote.getAttribute("data-number"));
+const secondSemitoneValue = parseInt(randomNoteTwo.getAttribute("data-number"));
+const intervalNumber = firstSemitoneValue - secondSemitoneValue;
 
 intervalButton.addEventListener("click", function() {
-    console.log("clicked");
-    let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
     randomNote.play();
-    let randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
-    setTimeout(function(){
-        randomNoteTwo.play();
+    setTimeout(function () {
+        randomNoteTwo.play()
     }, 1000)
-    let firstSemitoneValue = randomNote.getAttribute("data-number");
-    let secondSemitoneValue = randomNoteTwo.getAttribute("data-number");
-
-    const intervalNumber = parseInt(firstSemitoneValue)-parseInt(secondSemitoneValue);
-    console.log(intervalNumber);
 })
+
+    
+    
+
+
+
+
+
+// intervalButton.addEventListener("click", function() {
+//     console.log("clicked");
+//     let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
+//     randomNote.play();
+//     let randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
+//     setTimeout(function(){
+//         randomNoteTwo.play();
+//     }, 1000)
+    
+//     let firstSemitoneValue = randomNote.getAttribute("data-number");
+//     let secondSemitoneValue = randomNoteTwo.getAttribute("data-number");
+
+//     const intervalNumber = parseInt(firstSemitoneValue)-parseInt(secondSemitoneValue);
+//     console.log(intervalNumber);
+// })
 
 
 
