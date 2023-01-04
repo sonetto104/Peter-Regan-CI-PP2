@@ -1,13 +1,44 @@
+
+// let notes = document.getElementsByTagName("audio");
+// let notesArray = Array.from(notes);
+// let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
+// randomNote.play();
+let intervalButton = document.getElementById("quaver-button");
 let notes = document.getElementsByTagName("audio");
 let notesArray = Array.from(notes);
-let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
-let intervalButton = document.getElementById("quaver-button");
+
+intervalButton.addEventListener("click", function() {
+    console.log("clicked");
+    let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
+    randomNote.play();
+    let randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
+    setTimeout(function(){
+        randomNoteTwo.play();
+    }, 1000)
+    let firstSemitoneValue = randomNote.getAttribute("data-number");
+    let secondSemitoneValue = randomNoteTwo.getAttribute("data-number");
+
+    const intervalNumber = parseInt(firstSemitoneValue)-parseInt(secondSemitoneValue);
+    console.log(intervalNumber);
+})
+
+
+
+
 
 function getRandomNotes(notesArray, num) {
     let shuffledNotesArray = notesArray.sort(()=>0.5 - Math.random());
     return shuffledNotesArray.slice(0,num);
 }
 
+
+
+
+
+
+
+
+/** 
 
 var x = document.getElementById("C5");
 
