@@ -1,3 +1,4 @@
+//* Declare some variables that will be used frequently /
 const intervalButton = document.getElementById("quaver-button");
 const notes = document.getElementsByTagName("audio");
 const notesArray = Array.from(notes);
@@ -6,13 +7,39 @@ const randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
 const firstSemitoneValue = parseInt(randomNote.getAttribute("data-number"));
 const secondSemitoneValue = parseInt(randomNoteTwo.getAttribute("data-number"));
 const intervalNumber = firstSemitoneValue - secondSemitoneValue;
+const submitButton = document.getElementsByClassName("submit-button");
 
+//* Add event listener to interval button that will randomly select 
+// two notes to form interval 
 intervalButton.addEventListener("click", function() {
     randomNote.play();
     setTimeout(function () {
         randomNoteTwo.play()
     }, 1000)
 })
+
+const userIntervalQuality = document.getElementById('interval-quality');
+userIntervalQuality.addEventListener('change', function handleChange(event) {
+  console.log(event.target.value); //  get selected VALUE
+  /** get selected VALUE even outside event handler
+  //console.log(userIntervalQuality.options[userIntervalQuality.selectedIndex].value);
+  */
+  });
+
+
+
+
+
+
+
+// submitButton.addEventListener("click", function() {
+// })
+
+// function checkAnswer() {
+
+// }
+
+
 
     
     
