@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 //* Declare some variables that will be used frequently /
 const intervalButton = document.getElementById("quaver-button");
 const notes = document.getElementsByTagName("audio");
@@ -7,7 +9,7 @@ const randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
 const firstSemitoneValue = parseInt(randomNote.getAttribute("data-number"));
 const secondSemitoneValue = parseInt(randomNoteTwo.getAttribute("data-number"));
 const intervalNumber = firstSemitoneValue - secondSemitoneValue;
-const submitButton = document.getElementsByClassName("submit-button");
+const submitButton = document.getElementById("submit");
 
 //* Add event listener to interval button that will randomly select 
 // two notes to form interval 
@@ -40,11 +42,11 @@ userIntervalQuality.addEventListener('change', function handleChange(event) {
      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "unison") {
         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
         } else {
-            alert("Wrong, dumbo.")
+            alert("Wrong, dumbo.");
         }
     })  
     
-
+})
     
 
 
