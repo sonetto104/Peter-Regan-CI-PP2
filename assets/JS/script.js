@@ -35,6 +35,18 @@ userIntervalQuality.addEventListener('change', function handleChange(event) {
     (event.target.value);
   })
 
+   submitButton.addEventListener("click", function() {
+    if (intervalNumber === 0 && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
+     && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "unison") {
+        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+        } else {
+            alert("Wrong, dumbo.")
+        }
+    })  
+    
+
+    
+
 
 
 
