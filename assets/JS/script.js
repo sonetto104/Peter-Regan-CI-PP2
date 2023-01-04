@@ -8,12 +8,6 @@ let secondSemitoneValue = parseInt(randomNoteTwo.getAttribute("data-number"));
 let intervalNumber = firstSemitoneValue - secondSemitoneValue;
 const submitButton = document.getElementById("submit");
 
-
-document.addEventListener("DOMContentLoaded", function () {
-
-//* Declare some variables that will be used frequently /
-
-
 //* Add event listener to interval button that will randomly select 
 // two notes to form interval 
 intervalButton.addEventListener("click", function() {
@@ -27,7 +21,9 @@ intervalButton.addEventListener("click", function() {
 //* Instruct browser to listen to any change in user's choice of interval
 // quality so that correct answer can be checked later on.
 // This code block was taken from https://bobbyhadz.com/blog/javascript-select-onchange-get-value
+
 const userIntervalQuality = document.getElementById('interval-quality');
+
 userIntervalQuality.addEventListener('change', function handleChange(event) {
   (event.target.value); //  get selected VALUE
   /** get selected VALUE even outside event handler
@@ -45,104 +41,196 @@ userIntervalQuality.addEventListener('change', function handleChange(event) {
      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "unison") {
         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
         } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-
+            alert("Wrong, dumbo.")
         }
-    if ((intervalNumber === 1 || intervalNumber === -1 ) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor")
-    && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd")) {
-    alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }     
+    })
 
-    if ((intervalNumber === 2 || intervalNumber === -2) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major")
-    && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd")) {
-    alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }
 
-    if ((intervalNumber === 3 || intervalNumber === -3) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor")
-    && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd")) {
-    alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Instruct browser to listen to any change in user's choice of interval
+// quality so that correct answer can be checked later on.
+// This code block was taken from https://bobbyhadz.com/blog/javascript-select-onchange-get-value */
+
+
+// userIntervalQuality.addEventListener('change', function handleChange(event) {
+//   (event.target.value); //  get selected VALUE
+  /** get selected VALUE even outside event handler
+  //console.log(userIntervalQuality.options[userIntervalQuality.selectedIndex].value);
+  */
+// });
+
+// const userIntervalNumber = document.getElementById("interval-number").options[userIntervalNumber.selectedIndex].value;
+//   userIntervalNumber.addEventListener("change", function handleChange(event) {
+//     (event.target.value);
+//   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    submitButton.addEventListener("click", function() {
+//     userIntervalNumber = document.getElementById("interval-number");
+//     userIntervalNumber.addEventListener("change", function handleChange(event) {
+//     (event.target.value);})
+//     userIntervalQuality = document.getElementById('interval-quality');
+//     userIntervalQuality.addEventListener('change', function handleChange(event) {
+//       (event.target.value);
+//       });
+
+//     if (intervalNumber === 0 && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
+//      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "unison") {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+
+//         }
+//     if ((intervalNumber === 1 || intervalNumber === -1 ) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor")
+//     && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd")) {
+//     alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }     
+
+//     if ((intervalNumber === 2 || intervalNumber === -2) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major")
+//     && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd")) {
+//     alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }
+
+//     if ((intervalNumber === 3 || intervalNumber === -3) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor")
+//     && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd")) {
+//     alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }      
         
-    if ((intervalNumber === 4 || intervalNumber === -4) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major")
-    && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd")) {
-    alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!"); 
-        }
+//     if ((intervalNumber === 4 || intervalNumber === -4) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major")
+//     && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd")) {
+//     alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!"); 
+//         }
      
-    if ((intervalNumber === 5 || intervalNumber === -5) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }
+//     if ( (intervalNumber === 5 || intervalNumber === -5) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }
 
-    if ((intervalNumber === 6 || intervalNumber === -6) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "augmented")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }
+//     if ((intervalNumber === 6 || intervalNumber === -6) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "augmented")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }
 
-    if ((intervalNumber === 6 || intervalNumber === -6) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "diminished")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }
+//     if ((intervalNumber === 6 || intervalNumber === -6) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "diminished")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }
 
-    if ((intervalNumber === 7 || intervalNumber === -7) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }  
+//     if ((intervalNumber === 7 || intervalNumber === -7) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }  
         
-    if ((intervalNumber === 8 || intervalNumber === -8) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        } 
+//     if ((intervalNumber === 8 || intervalNumber === -8) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         } 
        
-    if ((intervalNumber === 9 || intervalNumber === -9) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        } 
+//     if ((intervalNumber === 9 || intervalNumber === -9) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         } 
         
-    if ((intervalNumber === 10 || intervalNumber === -10) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }     
+//     if ((intervalNumber === 10 || intervalNumber === -10) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }     
         
-    if ((intervalNumber === 11 || intervalNumber === -11) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }
+//     if ((intervalNumber === 11 || intervalNumber === -11) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }
         
-    if ((intervalNumber === 12 || intervalNumber === -12) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect")
-        && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "octave")) {
-        alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
-        } else {
-            alert("Not quite right. Get busy, Bizet and try again!");
-        }     
-    })  
+//     if ((intervalNumber === 12 || intervalNumber === -12) && (userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect")
+//         && (userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "octave")) {
+//         alert("Perfect pitch, Puccini! Let's see how you handle the next interval ;)");
+//         } else {
+//             alert("Not quite right. Get busy, Bizet and try again!");
+//         }     
+//     })  
     
 
 
-})
+
     
 
 
