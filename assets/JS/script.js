@@ -1,8 +1,8 @@
 
-// let notes = document.getElementsByTagName("audio");
-// let notesArray = Array.from(notes);
-// let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
-// randomNote.play();
+
+
+
+
 let intervalButton = document.getElementById("quaver-button");
 let notes = document.getElementsByTagName("audio");
 let notesArray = Array.from(notes);
