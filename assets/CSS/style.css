@@ -13,6 +13,8 @@ body {
     background: linear-gradient(142deg,
      rgba(63, 161, 251, 1) 0%,
      rgba(252, 70, 168, 1) 100%);
+     background-attachment: fixed;
+    background-size: cover;
 }
 
 @media only screen and (min-width: 150px) {
@@ -262,6 +264,9 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
   }
 }
 
+.score-incrementor {
+  padding-bottom: 20px;
+}
 /* 770px Breakpoint */
 
 @media only screen and (min-width: 770px) {

@@ -46,88 +46,103 @@ submitButton.addEventListener("click", function() {
     && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "unison") {
        alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
        getTwoRandomNotes();
+       incrementScore();
        
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 1 || intervalNumberContainer[intervalNumberContainer.length-1] === -1) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
    && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd") {
        alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
        getTwoRandomNotes();
+       incrementScore();
        
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 2 || intervalNumberContainer[intervalNumberContainer.length-1] === -2) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 3 || intervalNumberContainer[intervalNumberContainer.length-1] === -3) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
          
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 4 || intervalNumberContainer[intervalNumberContainer.length-1] === -4) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
-          
+          incrementScore();
           
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 5 || intervalNumberContainer[intervalNumberContainer.length-1] === -5) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 6 || intervalNumberContainer[intervalNumberContainer.length-1] === -6) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "augmented"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
         
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 6 || intervalNumberContainer[intervalNumberContainer.length-1] === -6) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "diminished"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
           
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 7 || intervalNumberContainer[intervalNumberContainer.length-1] === -7) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th") {
             alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
             getTwoRandomNotes();
+            incrementScore();
             
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 8 || intervalNumberContainer[intervalNumberContainer.length-1] === -8) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 9 || intervalNumberContainer[intervalNumberContainer.length-1] === -9) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 10 || intervalNumberContainer[intervalNumberContainer.length-1] === -10) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 11 || intervalNumberContainer[intervalNumberContainer.length-1] === -11) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 12 || intervalNumberContainer[intervalNumberContainer.length-1] === -12) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "octave") {
           alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
           getTwoRandomNotes();
+          incrementScore();
           
 
       } else {
        alert("Not correct. Get busy, Bizet and try again!");
+       let score = document.getElementById("score");
+       score.innerText = "0";
       }
 })
     
@@ -140,4 +155,9 @@ submitButton.addEventListener("click", function() {
     let secondSemitoneValue = parseInt(randomNoteTwo.getAttribute("data-number"));
     let intervalNumber = firstSemitoneValue - secondSemitoneValue;
     intervalNumberContainer.push(intervalNumber);
+}
+
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
