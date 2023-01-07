@@ -8,11 +8,11 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
+    height: 100vh;
     background: rgb(63, 161, 251);
     background: linear-gradient(142deg,
      rgba(63, 161, 251, 1) 0%,
      rgba(252, 70, 168, 1) 100%);
-     
 }
 
 @media only screen and (min-width: 150px) {
@@ -306,6 +306,6 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
   }
 }
 
-.notes {
- 
+.note-sounds {
+ display: none;
 }

@@ -130,7 +130,6 @@ submitButton.addEventListener("click", function() {
        alert("Not correct. Get busy, Bizet and try again!");
       }
 })
-
     
     function getTwoRandomNotes() {
     let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
