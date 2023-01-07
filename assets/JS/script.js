@@ -1,13 +1,5 @@
 
-const intervalButton = document.getElementById("quaver-button");
-const notes = document.getElementsByTagName("audio");
-const notesArray = Array.from(notes);
-let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
-let randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
-let firstSemitoneValue = parseInt(randomNote.getAttribute("data-number"));
-let secondSemitoneValue = parseInt(randomNoteTwo.getAttribute("data-number"));
-let intervalNumber = firstSemitoneValue - secondSemitoneValue;
-const submitButton = document.getElementById("submit");
+
 
 //* Add event listener to interval button that will randomly select 
 // two notes to form interval 
@@ -24,7 +16,6 @@ intervalButton.addEventListener("click", function() {
 // This code block was taken from https://bobbyhadz.com/blog/javascript-select-onchange-get-value
 
 const userIntervalQuality = document.getElementById('interval-quality');
-
 userIntervalQuality.addEventListener('change', function handleChange(event) {
   (event.target.value); //  get selected VALUE
   /** get selected VALUE even outside event handler
