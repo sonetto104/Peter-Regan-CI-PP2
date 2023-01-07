@@ -4,17 +4,26 @@
 
 /* Eliminate  Margin,Border and Padding as Default */
 
+.note-sounds {
+  display: none;
+ }
+
 body {
     margin: 0;
     border: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(63, 161, 251);
     background: linear-gradient(142deg,
      rgba(63, 161, 251, 1) 0%,
      rgba(252, 70, 168, 1) 100%);
-     background-attachment: fixed;
+    background-attachment: fixed;
     background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 150px) {
@@ -123,6 +132,7 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
     text-shadow: 3px 1px 1px #e62822;
     border: none;
     cursor: pointer;
+    outline: none;
   }
 
   .interval-button:hover {transform: translateY(4px);
@@ -256,7 +266,7 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
   }
 
   .submit-div {
-    margin-top: 60px;
+    margin-top: 20px;
   }
 
   .score-div {
@@ -273,13 +283,6 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
   h1 {
     font-size: 3.5em;
     margin-top: 40px;
-  }
-
-  .difficulty-div {
-   width: 60vw;
-   margin-left: 20vw;
-   margin-right: 20vw;
-   margin-top: 80px;
   }
 
   .button-container {
@@ -305,12 +308,5 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
     margin-right: 25vw;
     margin-left: 25vw;
   }
-
-  .notes-button-div {
-    margin-top: 40px;
-  }
 }
 
-.note-sounds {
- display: none;
-}
