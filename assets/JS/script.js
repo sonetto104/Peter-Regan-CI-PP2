@@ -12,17 +12,18 @@ document.addEventListener("DOMContentLoaded", function() {
         
 })
 
-
-
-
-//* Add event listener to interval button that will randomly select 
-// two notes to form interval 
+// Add event listener to interval button that picks the two most recent notes
+//pushed to random notes array.
 intervalButton.addEventListener("click", function() {
+    let randomNote = randomNotesArray[randomNotesArray.length - 2];
+    let randomNoteTwo = randomNotesArray[randomNotesArray.length - 1];
     randomNote.play();
     setTimeout(function () {
         randomNoteTwo.play()
     }, 1000);
 })
+
+
 
 
 //* Instruct browser to listen to any change in user's choice of interval
