@@ -1,9 +1,18 @@
+// Declare variables that can be accessed from any point of script. 
+// Set up storage containers for return values from functions.
 const intervalButton = document.getElementById("quaver-button");
 const notes = document.getElementsByTagName("audio");
 const notesArray = Array.from(notes);
 let randomNotesArray = [];
 const submitButton = document.getElementById("submit");
 let intervalNumberContainer = [];
+
+document.addEventListener("DOMContentLoaded", function() {
+        getTwoRandomNotes();
+        
+})
+
+
 
 
 //* Add event listener to interval button that will randomly select 
