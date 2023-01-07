@@ -99,6 +99,17 @@ userIntervalQuality.addEventListener('change', function handleChange(event) {
     })
 
     
+    function getTwoRandomNotes() {
+    let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
+    let randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
+    randomNotesArray.push(randomNote);
+    randomNotesArray.push(randomNoteTwo);
+
+    let firstSemitoneValue = parseInt(randomNote.getAttribute("data-number"));
+    let secondSemitoneValue = parseInt(randomNoteTwo.getAttribute("data-number"));
+    let intervalNumber = firstSemitoneValue - secondSemitoneValue;
+    intervalNumberContainer.push(intervalNumber);
+}
 
 
 
