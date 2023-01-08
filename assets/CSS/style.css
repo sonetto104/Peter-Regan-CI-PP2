@@ -93,23 +93,17 @@
   display: none;
 }
 
+@media only screen and (max-width: 500px) {
 
+  .modal, .modal-two, .modal-three, .correct-alert, .wrong-alert {
+    width: 90vw;
+    top: 10%;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .modal p, .modal-two p, .modal-three p, .correct-alert p, .wrong-alert p {
+    font-size: 1em;
+  }  
+}
 
 /* Eliminate  Margin,Border and Padding as Default */
 
