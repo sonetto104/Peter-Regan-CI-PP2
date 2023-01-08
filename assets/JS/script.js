@@ -20,6 +20,8 @@ const closeModalBtnThree = document.querySelector(".btn-close-three");
 const nextModalBtnThree = document.querySelector(".btn-next-three");
 const correctAlert = document.querySelector(".correct-alert");
 const nextIntervalButton = document.querySelector(".next-interval");
+const wrongAlert = document.querySelector(".wrong-alert");
+const nextIntervalButtonWrong = document.querySelector(".try-again");
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -155,7 +157,7 @@ submitButton.addEventListener("click", function() {
           
 
       } else {
-       alert("Not correct. Get busy, Bizet and try again!");
+       openWrongAlert();
        let score = document.getElementById("score");
        score.innerText = "0";
       }
@@ -197,6 +199,11 @@ function openCorrectAlert() {
     overlay.classList.remove("hidden");
 }
 
+function openWrongAlert() {
+    wrongAlert.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+}
+
 function closeModal() {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
@@ -217,6 +224,11 @@ function closeModal() {
     overlay.classList.add("hidden");
   }
 
+  function closeWrongAlert() {
+    wrongAlert.classList.add("hidden");
+    overlay.classList.add("hidden");
+  }
+
   closeModalBtn.addEventListener("click", closeModal);
   closeModalBtnTwo.addEventListener("click", closeModalTwo);
   closeModalBtnThree.addEventListener("click",closeModalThree);
@@ -231,6 +243,6 @@ function closeModal() {
     openModalThree();
   })
 
-  nextIntervalButton.addEventListener("click", function() {
-    closeCorrectAlert();
-  })
+  nextIntervalButtonWrong.addEventListener("click", function() {
+    closeWrongAlert();
+})

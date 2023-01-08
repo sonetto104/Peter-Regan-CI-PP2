@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap');
 
 /* Modal Styling */
-.modal, .modal-two, .modal-three, .correct-alert {
+.modal, .modal-two, .modal-three, .correct-alert, .wrong-alert {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,7 @@
   text-shadow: none;
 }
 
-.modal p, .modal-two p, .modal-three p, .correct-alert p {
+.modal p, .modal-two p, .modal-three p, .correct-alert p, .wrong-alert p {
   font-family: 'Righteous', cursive;
     font-weight: lighter;
     text-align: center;
@@ -51,7 +51,7 @@
   cursor: pointer;
 }
 
-.btn-next, .btn-next-two, .btn-next-three, .next-interval {
+.btn-next, .btn-next-two, .btn-next-three, .next-interval, .try-again {
   display: inline-block;
   padding: 0.8rem 1.4rem;
   font-weight: 700;
@@ -85,7 +85,7 @@
   z-index: 1;
 }
 
-.modal, .modal-two, .modal-three, .correct-alert {
+.modal, .modal-two, .modal-three, .correct-alert, .wrong-alert {
   z-index: 2;
 }
 
