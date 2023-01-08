@@ -6,15 +6,20 @@ const notesArray = Array.from(notes);
 let randomNotesArray = [];
 const submitButton = document.getElementById("submit");
 let intervalNumberContainer = [];
+
+//Variables for Modals
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector(".btn-close");
-const nextModalBtn = document.querySelector("btn-next");
+const closeModalBtnTwo = document.querySelector(".btn-close-two")
+const nextModalBtn = document.querySelector(".btn-next");
+const nextModalBtnTwo = document.querySelector(".btn-next-two");
+const modalTwo = document.querySelector(".modal-two");
+
 
 document.addEventListener("DOMContentLoaded", function() {
         getTwoRandomNotes();
-        openModal();
-        
+        openModal();        
 })
 
 // Add event listener to interval button that picks the two most recent notes
@@ -172,9 +177,26 @@ function openModal() {
     overlay.classList.remove("hidden");
   };
 
+  function openModalTwo() {
+    modalTwo.classList.remove("hidden")
+    overlay.classList.remove("hidden");
+  }
+
 function closeModal() {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
   };
 
+  function closeModalTwo() {
+    modalTwo.classList.add("hidden");
+    overlay.classList.add("hidden");
+  }
+
   closeModalBtn.addEventListener("click", closeModal);
+  closeModalBtnTwo.addEventListener("click", closeModalTwo);
+ 
+  nextModalBtn.addEventListener("click", function() {
+    closeModal();
+    openModalTwo();
+  })
+  
