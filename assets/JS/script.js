@@ -11,10 +11,13 @@ let intervalNumberContainer = [];
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector(".btn-close");
-const closeModalBtnTwo = document.querySelector(".btn-close-two")
+const closeModalBtnTwo = document.querySelector(".btn-close-two");
 const nextModalBtn = document.querySelector(".btn-next");
 const nextModalBtnTwo = document.querySelector(".btn-next-two");
 const modalTwo = document.querySelector(".modal-two");
+const modalThree = document.querySelector(".modal-three");
+const closeModalBtnThree = document.querySelector(".btn-close-three");
+const nextModalBtnThree = document.querySelector(".btn-next-three")
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -178,7 +181,12 @@ function openModal() {
   };
 
   function openModalTwo() {
-    modalTwo.classList.remove("hidden")
+    modalTwo.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  }
+
+  function openModalThree() {
+    modalThree.classList.remove("hidden");
     overlay.classList.remove("hidden");
   }
 
@@ -192,11 +200,21 @@ function closeModal() {
     overlay.classList.add("hidden");
   }
 
+  function closeModalThree() {
+    modalThree.classList.add("hidden");
+    overlay.classList.add("hidden");
+  }
+
   closeModalBtn.addEventListener("click", closeModal);
   closeModalBtnTwo.addEventListener("click", closeModalTwo);
+  closeModalBtnThree.addEventListener("click",closeModalThree);
  
   nextModalBtn.addEventListener("click", function() {
     closeModal();
     openModalTwo();
   })
-  
+
+  nextModalBtnTwo.addEventListener("click", function (){
+    closeModalTwo();
+    openModalThree();
+  })
