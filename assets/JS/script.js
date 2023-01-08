@@ -6,6 +6,10 @@ const notesArray = Array.from(notes);
 let randomNotesArray = [];
 const submitButton = document.getElementById("submit");
 let intervalNumberContainer = [];
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const openModalBtn = document.querySelector(".btn-open");
+const closeModalBtn = document.querySelector(".btn-close");
 
 document.addEventListener("DOMContentLoaded", function() {
         getTwoRandomNotes();
