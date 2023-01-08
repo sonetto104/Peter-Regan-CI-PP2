@@ -21,7 +21,7 @@ const nextModalBtnThree = document.querySelector(".btn-next-three");
 const correctAlert = document.querySelector(".correct-alert");
 const nextIntervalButton = document.querySelector(".next-interval");
 const wrongAlert = document.querySelector(".wrong-alert");
-const nextIntervalButtonWrong = document.querySelector(".try-again");
+const tryAgain = document.querySelector(".try-again");
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -243,6 +243,10 @@ function closeModal() {
     openModalThree();
   })
 
-  nextIntervalButtonWrong.addEventListener("click", function() {
+  nextIntervalButton.addEventListener("click", function() {
+    closeCorrectAlert();
+})
+
+   tryAgain.addEventListener("click", function() {
     closeWrongAlert();
 })
