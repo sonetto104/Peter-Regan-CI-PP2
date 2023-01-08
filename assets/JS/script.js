@@ -8,8 +8,8 @@ const submitButton = document.getElementById("submit");
 let intervalNumberContainer = [];
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
+const nextModalBtn = document.querySelector("btn-next");
 
 document.addEventListener("DOMContentLoaded", function() {
         getTwoRandomNotes();
