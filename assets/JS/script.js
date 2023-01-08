@@ -172,9 +172,7 @@ function openModal() {
     overlay.classList.remove("hidden");
   };
 
-  openModalBtn.addEventListener("click", openModal);
-
-function closeModal () {
+function closeModal() {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
   };
