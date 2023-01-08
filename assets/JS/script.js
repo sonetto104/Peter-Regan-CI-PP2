@@ -165,3 +165,8 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
+
+const openModal = function () {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  };
