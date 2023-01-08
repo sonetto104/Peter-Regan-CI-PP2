@@ -17,7 +17,9 @@ const nextModalBtnTwo = document.querySelector(".btn-next-two");
 const modalTwo = document.querySelector(".modal-two");
 const modalThree = document.querySelector(".modal-three");
 const closeModalBtnThree = document.querySelector(".btn-close-three");
-const nextModalBtnThree = document.querySelector(".btn-next-three")
+const nextModalBtnThree = document.querySelector(".btn-next-three");
+const correctAlert = document.querySelector(".correct-alert");
+const nextIntervalButton = document.querySelector(".next-interval");
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -57,97 +59,97 @@ submitButton.addEventListener("click", function() {
 
     if (intervalNumberContainer[intervalNumberContainer.length-1] === 0 && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
     && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "unison") {
-       alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+       openCorrectAlert();
        getTwoRandomNotes();
        incrementScore();
        
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 1 || intervalNumberContainer[intervalNumberContainer.length-1] === -1) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
    && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd") {
-       alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+       openCorrectAlert();
        getTwoRandomNotes();
        incrementScore();
        
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 2 || intervalNumberContainer[intervalNumberContainer.length-1] === -2) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 3 || intervalNumberContainer[intervalNumberContainer.length-1] === -3) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
          
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 4 || intervalNumberContainer[intervalNumberContainer.length-1] === -4) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 5 || intervalNumberContainer[intervalNumberContainer.length-1] === -5) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 6 || intervalNumberContainer[intervalNumberContainer.length-1] === -6) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "augmented"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
         
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 6 || intervalNumberContainer[intervalNumberContainer.length-1] === -6) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "diminished"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
           
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 7 || intervalNumberContainer[intervalNumberContainer.length-1] === -7) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th") {
-            alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+            openCorrectAlert();
             getTwoRandomNotes();
             incrementScore();
             
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 8 || intervalNumberContainer[intervalNumberContainer.length-1] === -8) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 9 || intervalNumberContainer[intervalNumberContainer.length-1] === -9) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 10 || intervalNumberContainer[intervalNumberContainer.length-1] === -10) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 11 || intervalNumberContainer[intervalNumberContainer.length-1] === -11) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
       } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 12 || intervalNumberContainer[intervalNumberContainer.length-1] === -12) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
       && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "octave") {
-          alert("Perfect pitch, Puccini! Let's see how you handle the next interval.");
+          openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
@@ -190,6 +192,11 @@ function openModal() {
     overlay.classList.remove("hidden");
   }
 
+function openCorrectAlert() {
+    correctAlert.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+}
+
 function closeModal() {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
@@ -205,6 +212,11 @@ function closeModal() {
     overlay.classList.add("hidden");
   }
 
+  function closeCorrectAlert() {
+    correctAlert.classList.add("hidden");
+    overlay.classList.add("hidden");
+  }
+
   closeModalBtn.addEventListener("click", closeModal);
   closeModalBtnTwo.addEventListener("click", closeModalTwo);
   closeModalBtnThree.addEventListener("click",closeModalThree);
@@ -217,4 +229,8 @@ function closeModal() {
   nextModalBtnTwo.addEventListener("click", function (){
     closeModalTwo();
     openModalThree();
+  })
+
+  nextIntervalButton.addEventListener("click", function() {
+    closeCorrectAlert();
   })
