@@ -49,11 +49,6 @@
   cursor: pointer;
 }
 
-.btn-open {
-  position: absolute;
-  bottom: 150px;
-}
-
 .btn-close {
   transform: translate(10px, -20px);
   padding: 0.5rem 0.7rem;

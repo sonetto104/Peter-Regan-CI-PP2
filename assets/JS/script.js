@@ -13,6 +13,7 @@ const closeModalBtn = document.querySelector(".btn-close");
 
 document.addEventListener("DOMContentLoaded", function() {
         getTwoRandomNotes();
+        openModal();
         
 })
 
@@ -166,14 +167,16 @@ function incrementScore() {
     document.getElementById("score").innerText = ++oldScore;
 }
 
-const openModal = function () {
+function openModal() {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
   };
 
   openModalBtn.addEventListener("click", openModal);
 
-  const closeModal = function () {
+function closeModal () {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
   };
+
+  closeModalBtn.addEventListener("click", closeModal);
