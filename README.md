@@ -124,7 +124,7 @@ I visited my repository and pressed on the settings button. This brought me to a
 5. Open your preferred IDE and make sure it has support for Git.
 6. Open the terminal, and create a directory where you can store the repository.
 7. Type git clone and paste the previously copied text and press enter.
-8.The repository will then be cloned to your selected directory.
+8. The repository will then be cloned to your selected directory.
 
 ***Manually Downloading the Repository***
 1. Visit Interval Master GitHub repository: https://github.com/sonetto104/Peter-Regan-CI-PP2
