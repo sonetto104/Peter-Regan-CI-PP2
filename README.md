@@ -66,12 +66,30 @@ This is not an exhaustive list of every single event listener, but these are pro
 ***Aria Labels***
 Consistent with standard guidelines, non-text elements in the HTML file have aria labels for visually impaired users where appropriate.
 
+## Project Feature Likely to be Noticed by User
+
+***Beamed Quaver Button for Generating Intervals***
+The most obvious feature of Interval Master is the large beamed quaver button. Even for non-musicians, this is an almost universally recognised symbol for music. Given that this is the only musical symbol on the page, and one of the largest features of the page despite having no text content, this signals to the user that this is where the interval or the "music" is going to come from.
+
+***Select Elements That Change Colour***
+
+![Screenshot of Select Elements](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/select-inputs-screenshot.png)
+
+The select elements change colour when the user hovers over them (as does the submit button). This is a visual affirmation for the user letting them know that their actions are making an impact on the site.
+
+***Score Incrementor***
+
+The score incrementor lets the user know how many intervals they have correctly identified in a row. I am attaching a general screenshot here where you can see the incrementor, quaver button and select elements all at once.
+
+![General screenshot](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/project-features-screenshot.png)
+
+
 ## Testing
 
 ***HTML, CSS and Javascript Testing***
 I tested the index.html file and style.css file with the W3C HTML and CSS validators. I tested the script.js file with Beautify Tools (https://beautifytools.com/javascript-validator.php). All files passed tests without errors.
 
-![Validation for HTML file](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-html-validation.png)
+![Validation for HTML file](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-second-html-validation.png)
 
 ![Validation for CSS file](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-css-validation.png)
 
@@ -151,10 +169,6 @@ This is generally commented in the relevant files but here is a list of sources 
 ## Issues With This Project That Could Be Improved
 
 I suspect there are more efficient ways to write some of the code I have written in my script.js file due to some blocks being repeated, however, I am not yet fluent enough with Javascript to be able to figure out what they are right now. Given the time frame for this project, I feel it is more likely that I would confuse and introduce problems to code that already works by trying to edit it at this stage. However, in future it would be worth exploring how I could make the script.js file more economical and easier to read.
-
-***Special Note Regarding Naming of Audio Tags in Assets Folder***
-Though Code Institute recommends not using capital letters in file names in the marking criteria for this project, I do use capital letters in the naming of notes. This is because in the absence of being able to use a musical flat symbol in the filenames, I am using 'b' to stand for flat instead. However if I used all lower case letters to name notes in combination with this 'b', it would make it far more difficult to read the note names. Furthermore, it is conventional in music theory to write note names with capital letters. 
-So while I do use capital letters which is not recommended, I argue that it is the lesser of two evils in this case and I still do not use spaces, as recommended, to facilitate ease using these files elsewhere.
 
 ## Scope for Future Additions To Project
 
