@@ -43,7 +43,7 @@ intervalButton.addEventListener("click", function() {
 // This code block was taken from https://bobbyhadz.com/blog/javascript-select-onchange-get-value
 const userIntervalQuality = document.getElementById('interval-quality');
 userIntervalQuality.addEventListener('change', function handleChange(event) {
-  (event.target.value); 
+  return (event.target.value); 
   /** get selected VALUE even outside event handler - note for myself.
   //console.log(userIntervalQuality.options[userIntervalQuality.selectedIndex].value);
   */
@@ -52,7 +52,7 @@ userIntervalQuality.addEventListener('change', function handleChange(event) {
   //Same process applied to user's selection for interval number.
   const userIntervalNumber = document.getElementById("interval-number");
   userIntervalNumber.addEventListener("change", function handleChange(event) {
-    (event.target.value);
+    return (event.target.value);
   });
 
 // Code to be executed when user submits their answer.
