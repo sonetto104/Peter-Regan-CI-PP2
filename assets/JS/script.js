@@ -17,7 +17,6 @@ const nextModalBtnTwo = document.querySelector(".btn-next-two");
 const modalTwo = document.querySelector(".modal-two");
 const modalThree = document.querySelector(".modal-three");
 const closeModalBtnThree = document.querySelector(".btn-close-three");
-const nextModalBtnThree = document.querySelector(".btn-next-three");
 const correctAlert = document.querySelector(".correct-alert");
 const nextIntervalButton = document.querySelector(".next-interval");
 const wrongAlert = document.querySelector(".wrong-alert");
@@ -26,7 +25,7 @@ const tryAgain = document.querySelector(".try-again");
 document.addEventListener("DOMContentLoaded", function() {
         getTwoRandomNotes();
         openModal();        
-})
+});
 
 // Add event listener to interval button that picks the two most recent notes
 //pushed to random notes array.
@@ -35,9 +34,9 @@ intervalButton.addEventListener("click", function() {
     let randomNoteTwo = randomNotesArray[randomNotesArray.length - 1];
     randomNote.play();
     setTimeout(function () {
-        randomNoteTwo.play()
+        randomNoteTwo.play();
     }, 1000);
-})
+});
 
 // Instruct browser to listen to any change in user's choice of interval
 // quality so that correct answer can be checked later on.
@@ -54,104 +53,90 @@ userIntervalQuality.addEventListener('change', function handleChange(event) {
   const userIntervalNumber = document.getElementById("interval-number");
   userIntervalNumber.addEventListener("change", function handleChange(event) {
     (event.target.value);
-  })
+  });
 
 // Code to be executed when user submits their answer.
 // Two different modal alerts available depending on whether answer is correct or not.  
 submitButton.addEventListener("click", function() {
 
-    if (intervalNumberContainer[intervalNumberContainer.length-1] === 0 && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
-    && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "unison") {
+    if (intervalNumberContainer[intervalNumberContainer.length-1] === 0 && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "unison") {
        openCorrectAlert();
        getTwoRandomNotes();
        incrementScore();
        
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 1 || intervalNumberContainer[intervalNumberContainer.length-1] === -1) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
-   && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 1 || intervalNumberContainer[intervalNumberContainer.length-1] === -1) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd") {
        openCorrectAlert();
        getTwoRandomNotes();
        incrementScore();
        
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 2 || intervalNumberContainer[intervalNumberContainer.length-1] === -2) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 2 || intervalNumberContainer[intervalNumberContainer.length-1] === -2) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "2nd") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 3 || intervalNumberContainer[intervalNumberContainer.length-1] === -3) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 3 || intervalNumberContainer[intervalNumberContainer.length-1] === -3) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
          
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 4 || intervalNumberContainer[intervalNumberContainer.length-1] === -4) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 4 || intervalNumberContainer[intervalNumberContainer.length-1] === -4) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "3rd") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 5 || intervalNumberContainer[intervalNumberContainer.length-1] === -5) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 5 || intervalNumberContainer[intervalNumberContainer.length-1] === -5) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 6 || intervalNumberContainer[intervalNumberContainer.length-1] === -6) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "augmented"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 6 || intervalNumberContainer[intervalNumberContainer.length-1] === -6) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "augmented" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "4th") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
         
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 6 || intervalNumberContainer[intervalNumberContainer.length-1] === -6) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "diminished"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 6 || intervalNumberContainer[intervalNumberContainer.length-1] === -6) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "diminished" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
           
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 7 || intervalNumberContainer[intervalNumberContainer.length-1] === -7) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 7 || intervalNumberContainer[intervalNumberContainer.length-1] === -7) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "5th") {
             openCorrectAlert();
             getTwoRandomNotes();
             incrementScore();
             
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 8 || intervalNumberContainer[intervalNumberContainer.length-1] === -8) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 8 || intervalNumberContainer[intervalNumberContainer.length-1] === -8) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 9 || intervalNumberContainer[intervalNumberContainer.length-1] === -9) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 9 || intervalNumberContainer[intervalNumberContainer.length-1] === -9) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "6th") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 10 || intervalNumberContainer[intervalNumberContainer.length-1] === -10) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 10 || intervalNumberContainer[intervalNumberContainer.length-1] === -10) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "minor" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 11 || intervalNumberContainer[intervalNumberContainer.length-1] === -11) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 11 || intervalNumberContainer[intervalNumberContainer.length-1] === -11) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "major" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "7th") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
           
 
-      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 12 || intervalNumberContainer[intervalNumberContainer.length-1] === -12) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
-      && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "octave") {
+      } else if ((intervalNumberContainer[intervalNumberContainer.length-1] === 12 || intervalNumberContainer[intervalNumberContainer.length-1] === -12) && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect" && userIntervalNumber.options[userIntervalNumber.selectedIndex].value === "octave") {
           openCorrectAlert();
           getTwoRandomNotes();
           incrementScore();
@@ -162,7 +147,7 @@ submitButton.addEventListener("click", function() {
        let score = document.getElementById("score");
        score.innerText = "0";
       }
-})
+});
 
 //Define functions to be called in script.
     function getTwoRandomNotes() {
@@ -184,7 +169,7 @@ function incrementScore() {
 function openModal() {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
-  };
+  }
 
   function openModalTwo() {
     modalTwo.classList.remove("hidden");
@@ -209,7 +194,7 @@ function openWrongAlert() {
 function closeModal() {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
-  };
+  }
 
   function closeModalTwo() {
     modalTwo.classList.add("hidden");
@@ -239,17 +224,17 @@ function closeModal() {
   nextModalBtn.addEventListener("click", function() {
     closeModal();
     openModalTwo();
-  })
+  });
 
   nextModalBtnTwo.addEventListener("click", function (){
     closeModalTwo();
     openModalThree();
-  })
+  });
 
   nextIntervalButton.addEventListener("click", function() {
     closeCorrectAlert();
-})
+});
 
    tryAgain.addEventListener("click", function() {
     closeWrongAlert();
-})
+});
