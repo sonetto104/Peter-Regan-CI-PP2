@@ -1,5 +1,3 @@
-![Interval Master Favicon](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/favicon.ico.png)
-
 ## README Document for Code Institute Portfolio Project 2 "Interval Master"
 
 ## Purpose
