@@ -161,6 +161,8 @@ submitButton.addEventListener("click", function() {
     intervalNumberContainer.push(intervalNumber);
 }
 
+
+//This function was taken directly from the Code Institute Love Maths Walkthrough Project.
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
