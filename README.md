@@ -96,6 +96,8 @@ I tested the index.html file and style.css file with the W3C HTML and CSS valida
 | Is each interval number matched to correct interval description? | Interval number for perfect unison = 0 <br><br> Interval number for minor 2nd = 1 or -1 <br><br> Interval number for major 2nd = 2 or -2 <br><br> Interval number for minor 3rd = 3 or -3 <br><br> Interval number for major 3rd = 4 or -4 <br><br> Interval number for perfect 4th = 5 or -5 <br><br> Interval number for augmented 4th = 6 or -6 <br><br> Interval number for diminished 5th = 6 or -6 <br><br> Interval number for perfect 5th = 7 or -7 <br><br> Interval number for minor 6th = 8 or -8 <br><br> Interval number for major 6th = 9 or -9 <br><br> Interval number minor 7th = 10 or -10 <br><br> Interval number for major 7th = 11 or -11 <br><br> Interval number for perfect octave = 12 or -12 <br><br> This will mean that the user will always be alerted that they are correct as long as they have selected the correct interval i.e. the interval descriptions assigned to each interval number are actually correct. | Same as expected. | Pass |
 | Is Interval Master compatible with browsers other than Chrome? E.g. Microsoft Edge, Mozilla Firefox, Samsung Internet Browser | Site should appear the same on a variety of browsers. | Same as expected. | Pass |
 
+***Special Note Regarding Perfect Unison:*** When a perfect unison is played, only one note sounds as there is no note difference in a unison interval.
+
 ***Preview of Responsive Site According to https://ui.dev/amiresponsive***
 
 ![Screenshot of site at different screen sizes](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/responsive-preview-screenshot.png)
@@ -148,7 +150,7 @@ This is generally commented in the relevant files but here is a list of sources 
 
 ## Issues With This Project That Could Be Improved
 
-I suspect there are more efficient ways to write some of the code I have written in my script.js file due to some blocks being repeated, however, I am not yet fluent enough with Javascript to be able to figure out what they are right now. Given the time frame for this project, I feel it is more likely that I would confuse and introduce problems to code that already works by trying to edit it at this tage. However, in future it would be worth exploring how I could make the script.js file more economical and easier to read.
+I suspect there are more efficient ways to write some of the code I have written in my script.js file due to some blocks being repeated, however, I am not yet fluent enough with Javascript to be able to figure out what they are right now. Given the time frame for this project, I feel it is more likely that I would confuse and introduce problems to code that already works by trying to edit it at this stage. However, in future it would be worth exploring how I could make the script.js file more economical and easier to read.
 
 ***Special Note Regarding Naming of Audio Tags in Assets Folder***
 Though Code Institute recommends not using capital letters in file names in the marking criteria for this project, I do use capital letters in the naming of notes. This is because in the absence of being able to use a musical flat symbol in the filenames, I am using 'b' to stand for flat instead. However if I used all lower case letters to name notes in combination with this 'b', it would make it far more difficult to read the note names. Furthermore, it is conventional in music theory to write note names with capital letters. 
