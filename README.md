@@ -144,6 +144,7 @@ This is generally commented in the relevant files but here is a list of sources 
 3. The CSS code that styles the submit button and the select elements comes from this source: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3
 4. The code for the event listener that monitors the user's selection from the select elements comes from this source: https://bobbyhadz.com/blog/javascript-select-onchange-get-value
 5. The code for the score incrementor was taken directly from the Code Institute Love Maths Walkthrough Project.
+6. The piano sounds came from a library belonging to the University of Iowa: https://theremin.music.uiowa.edu/MISpiano.html. I converted them from their original aiff. format.
 
 ## Issues With This Project That Could Be Improved
 
@@ -157,5 +158,6 @@ So while I do use capital letters which is not recommended, I argue that it is t
 
 1. This site could have varying difficulty levels. Giving the user the option to play the notes simultaneously would add a grade of difficulty. Offering the user three notes instead of a pair would require them to identify two intervals rather than one, again adding a grade of difficulty. These could also be played separately or simultaneously. This would involve the addition of further controls and Javascript in order to allow the user to choose the conditions of difficulty.
 2. A wider range of notes could be added. Currently this site tests intervals only within the range of one octave. Expanding the range by one octave more would allow the user to also test their recognition of compound intervals. This would also increase the frequency of some intervals which are currently underrepresented. Having only a one octave range limits the likely frequency of 7th and octave intervals.
+3. A leaderboard could be built and attached to the website, allowing users to record their scores by username.
 Though I was aware of these possibilities in building the project, I decided that they were slightly too ambitious for my current Javascript abilities. However, I would enjoy adding them in future.
 
