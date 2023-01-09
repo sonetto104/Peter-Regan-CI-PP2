@@ -135,4 +135,27 @@ I visited my repository and pressed on the settings button. This brought me to a
 After either cloning or downloading the repository, you can have offline access to it by navigating to the directory where it was stored in your IDE.
 
 
+## Acknowledgment of Code From Other Sources
+
+This is generally commented in the relevant files but here is a list of sources for code that came from elsewhere:
+
+1. The HTML and CSS code related to the modals is heavily dependent on code from this source: https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
+2. A lot of the code that styles the h1, h2 and some of the p elements, as well as the quaver icon button comes from this source: https://codepen.io/mireille1306/pen/BawdXzY
+3. The CSS code that styles the submit button and the select elements comes from this source: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3
+4. The code for the event listener that monitors the user's selection from the select elements comes from this source: https://bobbyhadz.com/blog/javascript-select-onchange-get-value
+5. The code for the score incrementor was taken directly from the Code Institute Love Maths Walkthrough Project.
+
+## Issues With This Project That Could Be Improved
+
+I suspect there are more efficient ways to write some of the code I have written in my script.js file due to some blocks being repeated, however, I am not yet fluent enough with Javascript to be able to figure out what they are right now. Given the time frame for this project, I feel it is more likely that I would confuse and introduce problems to code that already works by trying to edit it at this tage. However, in future it would be worth exploring how I could make the script.js file more economical and easier to read.
+
+***Special Note Regarding Naming of Audio Tags in Assets Folder***
+Though Code Institute recommends not using capital letters in file names in the marking criteria for this project, I do use capital letters in the naming of notes. This is because in the absence of being able to use a musical flat symbol in the filenames, I am using 'b' to stand for flat instead. However if I used all lower case letters to name notes in combination with this 'b', it would make it far more difficult to read the note names. Furthermore, it is conventional in music theory to write note names with capital letters. 
+So while I do use capital letters which is not recommended, I argue that it is the lesser of two evils in this case and I still do not use spaces, as recommended, to facilitate ease using these files elsewhere.
+
+## Scope for Future Additions To Project
+
+1. This site could have varying difficulty levels. Giving the user the option to play the notes simultaneously would add a grade of difficulty. Offering the user three notes instead of a pair would require them to identify two intervals rather than one, again adding a grade of difficulty. These could also be played separately or simultaneously. This would involve the addition of further controls and Javascript in order to allow the user to choose the conditions of difficulty.
+2. A wider range of notes could be added. Currently this site tests intervals only within the range of one octave. Expanding the range by one octave more would allow the user to also test their recognition of compound intervals. This would also increase the frequency of some intervals which are currently underrepresented. Having only a one octave range limits the likely frequency of 7th and octave intervals.
+Though I was aware of these possibilities in building the project, I decided that they were slightly too ambitious for my current Javascript abilities. However, I would enjoy adding them in future.
 
