@@ -23,7 +23,6 @@ const nextIntervalButton = document.querySelector(".next-interval");
 const wrongAlert = document.querySelector(".wrong-alert");
 const tryAgain = document.querySelector(".try-again");
 
-
 document.addEventListener("DOMContentLoaded", function() {
         getTwoRandomNotes();
         openModal();        
@@ -57,6 +56,8 @@ userIntervalQuality.addEventListener('change', function handleChange(event) {
     (event.target.value);
   })
 
+// Code to be executed when user submits their answer.
+// Two different modal alerts available depending on whether answer is correct or not.  
 submitButton.addEventListener("click", function() {
 
     if (intervalNumberContainer[intervalNumberContainer.length-1] === 0 && userIntervalQuality.options[userIntervalQuality.selectedIndex].value === "perfect"
@@ -162,7 +163,8 @@ submitButton.addEventListener("click", function() {
        score.innerText = "0";
       }
 })
-    
+
+//Define functions to be called in script.
     function getTwoRandomNotes() {
     let randomNote = notesArray[Math.floor(Math.random() * notesArray.length)];
     let randomNoteTwo = notesArray[Math.floor(Math.random() * notesArray.length)];
@@ -229,6 +231,7 @@ function closeModal() {
     overlay.classList.add("hidden");
   }
 
+  //Add event listeners so correct modals are displayed at the correct times.
   closeModalBtn.addEventListener("click", closeModal);
   closeModalBtnTwo.addEventListener("click", closeModalTwo);
   closeModalBtnThree.addEventListener("click",closeModalThree);

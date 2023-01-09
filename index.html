@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interval Master</title>
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.ico.png"/>
     <script src="https://kit.fontawesome.com/2ce459e778.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="modal hidden">
           <div>
-            <button class="btn-close">⨉</button>
+            <button class="btn-close" aria-label="close button">⨉</button>
             <h2 id="modal-heading">Welcome to Interval Master!</h2>
             <p>Have a musicianship exam coming up, or just want to brush up on your aural skills?</p>
             <p>Then Interval Master is the perfect place for you to practice your interval recognition!</p>
           </div>
-          <button class="btn-next">Next</button>
+          <button class="btn-next" aria-label="next button">Next</button>
     </section>
     <section class="modal-two hidden">
         <div>
-          <button class="btn-close-two">⨉</button>
+          <button class="btn-close-two" aria-label="close button">⨉</button>
           <h2 id="modal-heading-two">How It Works:</h2>
           <p>Click on the big button shaped like beamed quavers to hear an interval.</p>
           <p>Need to hear it again? Don't worry - just click it again.</p>
         </div>
-        <button class="btn-next-two">Next</button>
+        <button class="btn-next-two" aria-label="next button">Next</button>
   </section>
   <section class="modal-three hidden">
     <div>
-      <button class="btn-close-three">⨉</button>
+      <button class="btn-close-three" aria-label="close button">⨉</button>
       <h2 id="modal-heading-three">Next Step:</h2>
       <p>Once you think you recognise the interval, select an interval quality and interval number option from the drop down menus, and press "submit"!</p>
     </div>
@@ -41,42 +42,33 @@
     <div>
       <p>Perfect pitch, Puccini! Let's see how you handle the next interval!</p>
     </div>
-    <button class="next-interval">Get the next interval.</button>
+    <button class="next-interval" aria-label="get next interval button">Get the next interval.</button>
 </section>
 <section class="wrong-alert hidden">
     <div>
       <p>Sorry but that's not correct. Get busy, Bizet and try again!</p>
     </div>
-    <button class="try-again">Try again.</button>
+    <button class="try-again" aria-label="try again button">Try again.</button>
 </section>
 <div class="overlay hidden"></div>
-
-
-
-
-
-
-
-
-    <section id="header">
+<section id="header">
         <div id="header-div">
             <div class="interval-master-div">
                 <h1 class="interval-master-heading">Interval Master</h1>
             </div>
         </div>
     </section>
-
     <section id="game-section">
         <div class="game-area-div">
             <div id="interval-button-div">
-                <button class="interval-button" id="quaver-button"><i class="fa-solid fa-music"></i></button>
+                <button class="interval-button" id="quaver-button"><i class="fa-solid fa-music" aria-label="quaver icon button"></i></button>
             </div>
             <div class="input-div">
                 <div class="interval-quality-div label">
                     <label for="interval-quality">Interval Quality</label>
                 </div>
                 <div class="interval-quality-div">
-                    <select name="interval-quality" class="button" id="interval-quality">
+                    <select name="interval-quality" class="button" id="interval-quality" aria-label="dropdown menu for interval quality">
                         <option value="major">Major</option>
                         <option value="minor">Minor</option>
                         <option value="perfect">Perfect</option>
@@ -88,7 +80,7 @@
                     <label for="interval-number">Interval Number</label>
                 </div>
                 <div class="interval-quality-div">
-                    <select name="interval-number" class="button" id="interval-number">
+                    <select name="interval-number" class="button" id="interval-number" aria-label="dropdown menu for interval number">
                         <option value="unison">Unison</option>
                         <option value="2nd">2nd</option>
                         <option value="3rd">3rd</option>
