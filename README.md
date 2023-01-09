@@ -66,3 +66,74 @@ This is not an exhaustive list of every single event listener, but these are pro
 ***Aria Labels***
 Consistent with standard guidelines, non-text elements in the HTML file have aria labels for visually impaired users where appropriate.
 
+## Testing
+
+***HTML, CSS and Javascript Testing***
+I tested the index.html file and style.css file with the W3C HTML and CSS validators. I tested the script.js file with Beautify Tools (https://beautifytools.com/javascript-validator.php). All files passed tests without errors.
+
+![Validation for HTML file](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-html-validation.png)
+
+![Validation for CSS file](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-css-validation.png)
+
+![Validation for JS file](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-js-validation.png)
+
+***Manual Testing***
+
+| Test        | Expected Outcome | Actual Outcome | Pass/Fail |
+| ----------- | ---------------- | -------------- | --------- | 
+| Is the site readable with correct content?    | Site should have three welcome modals without spelling errors, heading, clearly legible select elements containing intervals with qualities major, minor, perfect and diminished, and number ranging from unison to octave.       | Same as expected. | Pass |
+| Is the site responsive to varying screen sizes?  | Site should be legible with clear flow with screen widths as small as 150px.      | Same as expected  ![Screenshot 1](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-screen-size-screenshot1.png) ![Screenshot 2](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-screen-size-screenshot2.png) ![Screenshot 3](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-screen-size-screenshot3.png) ![Screenshot 4](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-screen-size-screenshot4.png) ![Screenshot 5](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-screen-size-screenshot5.png) ![Screenshot from mobile](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-mobile-screenshot.jpg) | Pass |
+| Do three welcome modals appear in correct order when site loads? | Welcome modal should appear when user visits site. Second instruction modal appears after clicking "next". 3rd instruction modal appears after clicking "next" | Same as expected. | Pass |
+| Do all "close modal" buttons work on all three welcome modals? | All modals should close after clicking "X" button. | Same as expected. | Pass |
+| Does quaver icon button play an interval? | Two notes should sound after pressing quaver icon button | Same as expected. | Pass |
+| Does quaver icon button repeat same interval if "submit" has not been pressed? | If user has not pressed "submit" and they press the quaver button again, they should be able to repeatedly hear the same interval. | Same as expected. | Pass |
+| Does the "correct answer" modal appear if user submits correct answer? | If user correctly identifies interval and presses submit, a modal should appear letting them know they are correct and prompt them to generate the next interval. | Same as expected. | Pass |
+| Does a new interval play after the submission of a correctly identified interval? | If user submits answer that is correct, the next interval they play should be a different randomly generated interval. | Same as expected. | Pass |
+| Does "wrong answer" modal appear if user submits wrong answer? | If modal incorrectly identifies interval and presses submit, a modal should appear letting them know they are incorrect and prompt them to try again. | Same as expected. | Pass |
+| Is the same interval still played after the submission of an incorrect answer? | If the user incorrectly identifies an interval and presses submit, the next interval they play should be the same as what they heard before. | Same as expected. | Pass |
+| Does score incrementor increment the score by 1 each time user indentifies correct interval? | Score should increase by 1 after each correct interval submission. | Same as expected. | Pass |
+| Does score return to 0 after each incorrect identification of an interval? | Score should return to 0 each time an interval is incorrectly identified. | Same as expected. | Pass |
+| Is each interval number matched to correct interval description? | Interval number for perfect unison = 0
+Interval number for minor 2nd = 1 or -1 <br> Interval number for major 2nd = 2 or -2 <br> Interval number for minor 3rd = 3 or -3 <br> Interval number for major 3rd = 4 or -4 <br> Interval number for perfect 4th = 5 or -5 <br> Interval number for augmented 4th = 6 or -6 <br> Interval number for diminished 5th = 6 or -6 <br> Interval number for perfect 5th = 7 or -7 <br> Interval number for minor 6th = 8 or -8 <br> Interval number for major 6th = 9 or -9 <br> Interval number minor 7th = 10 or -10 <br> Interval number for major 7th = 11 or -11 <br> Interval number for perfect octave = 12 or -12 | This will mean that the user will always be alerted that they are correct as long as they have selected the correct interval i.e. the interval descriptions assigned to each interval numnber are actually correct. | Same as expected. | Pass |
+| Is Interval Master compatible with browsers other than Chrome? E.g. Microsoft Edge, Mozilla Firefox, Samsung Internet Browser | Site should appear the same on a variety of browsers. | Same as expected. | Pass |
+
+***Preview of Responsive Site According to https://ui.dev/amiresponsive***
+
+![Screenshot of site at different screen sizes](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/responsive-preview-screenshot.png)
+
+## Deployment
+
+***How I Deployed the Project***
+I visited my repository and pressed on the settings button. This brought me to a new page. On this new page there is a menu on the left hand side of the page. I clicked on the "Pages" option from this menu. Under "Source", I selected "main" as the branch from which to deploy the project from. I then clicked "Save" which automatically refreshed the page. After the few minutes required for Github to build the website, a link for the website appeared on this page.
+
+***How to Run This Project From a Browser***
+
+1. Install Google Chrome or Mozilla Firefox.
+2. Install the Gitpod browser extension for your chosen browser.
+3. Create a GitHub account and log into it.
+4. Visit the repository for this project. It is called sonetto104/Peter-Regan-CI-PP2. You can also use this link to visit it: https://github.com/sonetto104/Peter-Regan-CI-PP2
+5. Open this repository in Gitpod by clicking the green Gitpod button at the top right of the repository.
+6. This will open a new workspace with the current state of the main branch of this repository.
+
+***How to Run This Project Locally***
+
+***Cloning the Repository***
+1. Visit the Interval Master repository: https://github.com/sonetto104/Peter-Regan-CI-PP2
+2. Click the "Code" dropdown box above the repository's file explorer and select the "Local" heading.
+3. Underneath this, click the HTTPS subheading if it's not already selected.
+4. Copy the link presented in the text field below this HTTPS subheading.
+5. Open your preferred IDE and make sure it has support for Git.
+6. Open the terminal, and create a directory where you can store the repository.
+7. Type git clone and paste the previously copied text and press enter.
+8.The repository will then be cloned to your selected directory.
+
+***Manually Downloading the Repository***
+1. Visit Interval Master GitHub repository: https://github.com/sonetto104/Peter-Regan-CI-PP2
+2. Click the "Code" dropdown box next to the green Gitpod icon.
+3. Click the "Download ZIP" option; this will download a copy of the selected branch's repository as a zip file.
+4. Find the downloaded file on your your computer, and extract the ZIP to the folder where you would like to store the repository.
+
+After either cloning or downloading the repository, you can have offline access to it by navigating to the directory where it was stored in your IDE.
+
+
+
