@@ -109,7 +109,7 @@ came from this source: https://www.freecodecamp.org/news/how-to-build-a-modal-wi
   }  
 }
 
-/* Eliminate  Margin,Border and Padding as Default */
+/* Eliminate  Margin, Border and Padding as Default */
 
 .note-sounds {
   display: none;
@@ -169,10 +169,6 @@ body {
 }
 
 /* Styling for Game Area */
-
-.difficulty-div {
-    margin-top: 20px;
-}
 
 /* Styling for h1 that was taken from external source slightly adapted here */
 
@@ -419,4 +415,3 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
     margin-left: 25vw;
   }
 }
-
