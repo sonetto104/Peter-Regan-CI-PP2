@@ -95,6 +95,12 @@ I tested the index.html file and style.css file with the W3C HTML and CSS valida
 
 ![Validation for JS file](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-js-validation.png)
 
+***Lighthouse Report***
+
+Interval Master also scores well on a lighthouse report.
+
+![Lighthouse report for Interval Master](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-lighthouse-report.png)
+
 ***Manual Testing***
 
 | Test        | Expected Outcome | Actual Outcome | Pass/Fail |
