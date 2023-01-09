@@ -5,7 +5,7 @@
 /* Modal Styling */
 
 /*A significant amount of the code for the styling and html code governing the modal windows
-came from this source: https://carsonf92.medium.com/precise-targeting-with-css-selectors-745237a050b6*/
+came from this source: https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/ */
 
 .modal, .modal-two, .modal-three, .correct-alert, .wrong-alert {
   display: flex;
@@ -216,7 +216,6 @@ heavily dependent on code taken from this source: https://www.w3schools.com/css/
   .button-container {
     text-align: center;
     justify-content: center;
-    padding: auto;
     margin-top: 40px;
   }
   
