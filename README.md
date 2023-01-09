@@ -51,7 +51,7 @@ I have decided to calculate the identity of each interval by counting how many s
 So: C4=0, Db4=1, D4=2, Eb4=3, E4=4 ....... C5=12
 
 3. The interval number is calculated as the difference between the data-number attribute values of the first note of the interval and the second note of the interval.
-4. If the interval number is negative, then an ascending interval was played. If if is positive, a descending interval was played. Thankfully whether the interval number is positive or negative does not change its quality.
+4. If the interval number is negative, then an ascending interval was played. If it is positive, a descending interval was played. Thankfully whether the interval number is positive or negative does not change its quality.
 
 ***Event Listeners***
 Event listeners are responsible for many of the behaviours of the Interval Master page.
