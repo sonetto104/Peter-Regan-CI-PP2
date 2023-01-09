@@ -34,7 +34,7 @@ The font I used for Interval Master is "Righteous" which I took from Google Font
 I used modals rather than browser alerts to give the user feedback and introduce them to the website as they are nicer to look at and keep the user's attention focused within the website rather than on the idea of their browser as a vehicle that could take them elsewhere. It also makes communication from the page to the user visually consistent with the rest of the site. Purely for the purposes of legibility, I made the modals black and white. Having tried to use some of the colours already in use in the website, I decided they were too distracting given how many bright colours there are already present in the page, and this made the modals difficult to read.
 
 ## Project Features
-The features most important to this project are the random note pair generator, the interval number calculator, the event listeners that listen to the user's answer and the event listeners that tell the user whether they were correct or not and decided whether to generate a new note pair or not.
+The features most important to this project are the random note pair generator, the interval number calculator, the event listeners that listen to the user's answer and the event listeners that tell the user whether they were correct or not and decide whether to generate a new note pair or not.
 
 ***Random Note Pair Generator***
 There are 13 audio tags with player controls, each containing a note sounding for approximately one second, in the HTML file. The range of these notes span one octave.
