@@ -1,108 +1,70 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Interval Master Favicon](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/favicon.ico.png)
 
-Welcome sonetto104,
+## README Document for Code Institute Portfolio Project 2 "Interval Master"
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Purpose
+"Interval Master" was constructed as a requirement for Code Institute's Diploma in Full Stack Software Development course. Its purpose is to show that I have achieved a basic command of Javascript and can use it to add a level of interactivity to a web page built with HTML and CSS.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+In its imagined context, Interval Master may be used by music and music theory students, musicians and music teachers as a practice tool for interval recognition. Good interval recognition is one of the most helpful tools to have when playing music by ear or when conducting analysis without the aid of a score. A beneficial byproduct of this skill is that it also encourages the formation of a stronger mental image of the distances between notes. If a musician already has a strong habit and history of good physical practice, this can facilitate better note accuracy in playing, without the need for additional physical practice. (Remember the physical practice base already has to be there though - we can't skip that part!)
 
-## Gitpod Reminders
+## Imagined User Stories
+While I would like to imagine that musicians and students are all happily and diligently practising their intervals regularly, a game like this is most likely to be used by music students who are practising for an upcoming theory, general musicianship or aural skills exam. Beyond this situation, it is unlikely a different type of user would find use for this page.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Value Provided to the User
+In order to really practise interval recognition well, the intervals supplied must be unknown and random. It is difficult to do this alone because if a student were to try and practise listening to intervals made with their own instrument, it is too easy for the interval in question to be not truly random and unknown. Even if blindfolded, the physical sensation of touching the instrument can give clues about which notes are sounding.
+In this respect, Interval Master is very helpful. It gives the user to opportunity to practise interval recognition regularly with completely randomised intervals. It also eliminates the need to have another person (usually a teacher) supply the intervals, something which would usually only happen once a week. Practising a skill once per week is not conducive to developing strong competency.
 
-`python3 -m http.server`
+## Technologies Used
+For this project I used GitHub to both host and deploy my repository. With GitHub's built in code editor I used HTML to build the layout of the site. I linked an external CSS stylesheet to the HTML to style the HTML elements and make them responsive to different screen sizes. I linked an external Javascript file to the HTML file to govern how the HTML elements behave according to the user's actions.
 
-A blue button should appear to click: _Make Public_,
+## Design
 
-Another blue button should appear to click: _Open Browser_.
+***Layout and General Structure***
+I used this simple hand drawn wireframe to create the general layout of the website.
+![Interval Master Wireframe](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-layout.jpg)
+You may notice that there are fewer buttons in the finished website than I had initally planned for in my wireframe. This is because I had originally imagined additional features that I then decided were too ambitious for the scope and timescale of this project. However, otherwise this wireframe proved to be helpful and I largely stuck to it.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+***Colour Scheme***
+For Interval Master I used bright colours. The background has a gradient effect using blue and pink. Text elements are white and have a red and orange text-shadow effect that makes them more dynamic looking and also makes the brightly coloured text more easy to read and differentiate from the colourful background. Buttons and select elements are also red but change to a very contrasting bright green when the user hovers over them. This is to allow the user to easily identify what choice they are making. As this website does serve a particularly serious purpose, I chose these bright colours to create an atmosphere of fun so the user is encouraged to think of Interval Master as a game rather than as a dry music theory exercise.
 
-A blue button should appear to click: _Make Public_,
+![Screenshot of Page](https://github.com/sonetto104/Peter-Regan-CI-PP2/blob/main/assets/images/interval-master-page-screenshot.png)
 
-Another blue button should appear to click: _Open Browser_.
+***Fonts***
+The font I used for Interval Master is "Righteous" which I took from Google Fonts. As there are so few text elements in this webpage, I decided not to choose a different font family for heading and non-heading elements, but just used differing font weights and sizes. I chose this font as it is strong and easily legible, but it is also quite rounded which helps contribute to the atmosphere of fun I referred to above in the Colour Scheme section. I used a skew effect on the Interval Master heading, again to suggest the idea of something dynamic and fun rather than static and boring.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+***Modals***
+I used modals rather than browser alerts to give the user feedback and introduce them to website as they are nicer to look at and keep the user's attention focused within the website rather than on the idea of their browser as a vehicle that could take them elsewhere. It also makes communication from the page to the user visually consistent with the rest of the site. Purely for the purposes of legibility, I made the modals black and white. Having tried to use some of the colours already in use in the website, I decided they were too distracting given how many bright colours there are already present in the page, and this made the modals difficult to read.
 
-To log into the Heroku toolbelt CLI:
+## Project Features
+The features most important to this project are the random note pair generator, the interval number calculator, the event listeners that listen to the user's answer and the event listeners that tell the user whether they were correct or not and decided whether to generate a new note pair or not.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+***Random Note Pair Generator***
+There are 13 audio tags with player controls, each containing a note sounding for approximately one second, in the HTML file. The range of these notes span one octave.
+The interval is generated from these audio tags according to these steps:
+1. The browser listens for all the DOM content to be loaded.
+2. A function randomly selects two notes from the audio tags (which have been converted into an array) and pushes them into an empty array called "randomNotesArray".
+3. There is an event listener on the large beamed quaver button in the middle of the page. When pressed, the second last and last items in the randomNotesArray one second apart.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+***Interval Number Calculator***
+I have decided to calculate the identity of each interval by counting how many semitones there are between the random note pair. This was achieved using the following logic:
+1. Each note was assigned an attribute called "data-number" which was assigned a number value.
+2. Corresponding to a chromatic scale beginning on C4, the number values begin with 0 and stop at 12. With every semitone ascension from C4, the "data-number" number value increases by 1. 
 
-------
+So: C4=0, Db4=1, D4=2, Eb4=3, E4=4 ....... C5=12
 
-## Release History
+3. The interval number is calculated as the difference between the data-number attribute values of the first note of the interval and the second note of the interval.
+4. If the interval number is negative, then an ascending interval was played. If if is positive, a descending interval was played. Thankfully whether the interval number is positive or negative does not change its quality.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+***Event Listeners***
+Event listeners are responsible for many of the behaviours of the Interval Master page.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+1. A DOM Content Loaded event listener is responsible for the appearance of a modal welcoming the user to Interval Master when they open the page.
+2. Subsequent event listeners attached to buttons within the series of welcome modals are responsible for the opening and closing of these modals in the correct order.
+3. Event listeners listen to the user's choice of interval quality and number so that the browser is always up to date with these choices and can accurately record them, no matter how many times the user may change their mind.
+4. An event listener is attached to the submit button and can decide whether to show a modal that tells the listener their answer was correct or incorrect. According to either case, the event listener can also decide whether to generate a new random interval or not.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+This is not an exhaustive list of every single event listener, but these are probably the most important examples.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+***Aria Labels***
+Consistent with standard guidelines, non-text elements in the HTML file have aria labels for visually impaired users where appropriate.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
