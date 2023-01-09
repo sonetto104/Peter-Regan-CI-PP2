@@ -41,7 +41,7 @@ There are 13 audio tags with player controls, each containing a note sounding fo
 The interval is generated from these audio tags according to these steps:
 1. The browser listens for all the DOM content to be loaded.
 2. A function randomly selects two notes from the audio tags (which have been converted into an array) and pushes them into an empty array called "randomNotesArray".
-3. There is an event listener on the large beamed quaver button in the middle of the page. When pressed, the second last and last items in the randomNotesArray one second apart.
+3. There is an event listener on the large beamed quaver button in the middle of the page. When pressed, the second last and last items in the randomNotesArray are played one second apart.
 
 ***Interval Number Calculator***
 I have decided to calculate the identity of each interval by counting how many semitones there are between the random note pair. This was achieved using the following logic:
