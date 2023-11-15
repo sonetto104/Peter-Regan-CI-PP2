@@ -1,5 +1,5 @@
 ## README Document for Code Institute Portfolio Project 2 "Interval Master"
-
+[Live Site](https://sonetto104.github.io/Peter-Regan-CI-PP2/)
 ## Purpose
 "Interval Master" was constructed as a requirement for Code Institute's Diploma in Full Stack Software Development course. Its purpose is to show that I have achieved a basic command of Javascript and can use it to add a level of interactivity to a web page built with HTML and CSS.
 
